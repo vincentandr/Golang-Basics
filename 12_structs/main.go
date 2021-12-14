@@ -45,6 +45,13 @@ func main() {
 	// person1.age = 30
 	// fmt.Println(person1.age)
 
+	// If a struct gets copied and changed, it won't change the original struct unlike slice / map
+	person2 := person1
+
+	fmt.Println(person1, person2)
+	person2.firstName = "Sam"
+	fmt.Println(person1, person2)
+
 	person1.hasBirthday()
 	person1.getMarried("Andrian")
 	fmt.Println(person1.greet())

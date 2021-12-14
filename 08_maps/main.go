@@ -8,6 +8,7 @@ func main() {
 	// emails["Bob"] = "bob@gmail.com"
 	// emails["Vincent"] = "vincent@gmail.com"
 
+	// Map is also a pointer like slices.
 	emails := map[string] string {"Bob":"bob@gmail.com", "Vincent":"vincent@gmail.com"}
 
 	fmt.Println(emails)
